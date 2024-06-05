@@ -2,25 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1st STEP</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="./src/output.css"> -->
-    <link rel="stylesheet" href="./src/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
     <header class="bg-[#1A1819] flex w-full justify-between md:px-10 px-4 py-6 items-center sticky top-0 z-10">
-        <div><a href=""><img class="w-full h-10 block" src="./img/1stSTEP-logo.png" alt></a></div>
+        <div>
+            <a href=""><img class="w-full h-10 block" src="./img/1stSTEP-logo.png" alt /></a>
+        </div>
 
         <nav class="md:block hidden">
             <ul class="flex gap-4 space-x-4">
-                <li class=""><a class="link !text-white" href="#Bar">Bar</a></li>
-                <li class=""><a class="link !text-white" href="#">Share office</a></li>
+                <li class=""><a class="link !text-white" href="#bar">Bar</a></li>
+                <li class="">
+                    <a class="link !text-white" href="#">Share office</a>
+                </li>
                 <li class=""><a class="link !text-white" href="#">Recruit</a></li>
-                <li class=""><a class="link !text-white" href="#footer">Contact</a></li>
+                <li class="">
+                    <a class="link !text-white" href="#footer">Contact</a>
+                </li>
             </ul>
         </nav>
         <div class="nav-menu__container block md:hidden">
@@ -41,7 +47,7 @@
         </div>
     </header>
     <main>
-        <section class="hero-section section flex justify-center items-center">
+        <section class="hero-section section flex justify-center items-center" id="bar">
             <div
                 class="hero-section__inner container flex md:flex-row flex-col-reverse p-4 bg-[#1A1819] justify-center items-center gap-4 lg:gap-8 xl:gap-12">
                 <div class="grid gap-4">
@@ -52,9 +58,8 @@
                     </h1>
                     <h1 class="reveal-text">
                         <span data-aos="custom-fade-up"
-                            class="text-2xl lg:text-3xl xl:text-4xl text-white tracking-wide xl:tracking-widest">Bar
-                            in Ho
-                            Chi Minh, Vietnam.</span>
+                            class="text-2xl lg:text-3xl xl:text-4xl text-white tracking-wide xl:tracking-widest">Bar in
+                            Ho Chi Minh, Vietnam.</span>
                     </h1>
                     <h1 class="reveal-text">
                         <span data-aos="custom-fade-up"
@@ -64,58 +69,73 @@
                     <h1 class="reveal-text">
                         <span data-aos="custom-fade-up"
                             class="text-2xl lg:text-3xl xl:text-4xl text-white tracking-wide xl:tracking-widest">Thành
-                            phố
-                            Hồ Chí Minh, Việt Nam.</span>
+                            phố Hồ Chí Minh, Việt Nam.</span>
                     </h1>
                 </div>
-                <div><img class="max-w-[700px] w-full h-auto" src="../img/hero-section.png" data-aos="fade-left" alt>
+                <div>
+                    <img class="max-w-[700px] w-full h-auto" src="../img/hero-section.png" data-aos="fade-left" alt />
                 </div>
             </div>
-
         </section>
         <section class="menu-section section flex justify-center items-center py-12 md:py-16">
             <div class="menu-section__inner container flex flex-col items-center gap-16 px-4">
-                <h1 class="reveal-text "><span data-aos="custom-fade-up"
-                        class="text-2xl lg:text-3xl xl:text-4xl text-white">Menu</span></h1>
+                <h1 class="reveal-text">
+                    <span data-aos="custom-fade-up" class="text-2xl lg:text-3xl xl:text-4xl text-white">Menu</span>
+                </h1>
                 <div class="menu-section__content flex flex-col items-center gap-8">
-                    <h2 class="reveal-text"><span data-aos="custom-fade-up"
-                            class=" text-xl md:text-2xl text-white">Japanese
-                            alcohol, Beer, Soft drink</span></h2>
+                    <h2 class="reveal-text">
+                        <span data-aos="custom-fade-up" class="text-xl md:text-2xl text-white">Japanese alcohol, Beer,
+                            Soft drink</span>
+                    </h2>
                     <div>
                         <ul class="grid grid-cols-2 sm:grid-cols-3 md:gap-8 gap-4 overflow-hidden">
                             <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
-                                data-aos="fade-up"><img class="max-w-20 h-auto w-full" src="./img/KURO-drink.png" alt>
-                                <p class="text-center text-white">KURO KIRISHIMA<br>
-                                    黒霧島</p>
+                                data-aos="fade-up">
+                                <img class="max-w-20 h-auto w-full" src="./img/KURO-drink.png" alt />
+                                <p class="text-center text-white">
+                                    KURO KIRISHIMA<br />
+                                    黒霧島
+                                </p>
                             </li>
                             <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
-                                data-aos="fade-up"><img class="max-w-20 h-auto w-full" src="./img/AKA-drink.png" alt>
-                                <p class="text-center text-white">AKA KIRISHIMA<br>
-                                    赤霧島</p>
+                                data-aos="fade-up">
+                                <img class="max-w-20 h-auto w-full" src="./img/AKA-drink.png" alt />
+                                <p class="text-center text-white">
+                                    AKA KIRISHIMA<br />
+                                    赤霧島
+                                </p>
                             </li>
                             <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
-                                data-aos="fade-up"><img class="max-w-20 h-auto w-full" src="./img/IICHIKO-drink.png"
-                                    alt>
-                                <p class="text-center text-white">IICHIKO<br>
-                                    いいちこ</p>
+                                data-aos="fade-up">
+                                <img class="max-w-20 h-auto w-full" src="./img/IICHIKO-drink.png" alt />
+                                <p class="text-center text-white">
+                                    IICHIKO<br />
+                                    いいちこ
+                                </p>
                             </li>
                             <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
-                                data-aos="fade-up"><img class="max-w-20 h-auto w-full" src="./img/DAIYAME-drink.png"
-                                    alt>
-                                <p class="text-center text-white">DAIYAME 25<br>
-                                    だいやめ</p>
+                                data-aos="fade-up">
+                                <img class="max-w-20 h-auto w-full" src="./img/DAIYAME-drink.png" alt />
+                                <p class="text-center text-white">
+                                    DAIYAME 25<br />
+                                    だいやめ
+                                </p>
                             </li>
                             <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
-                                data-aos="fade-up"><img class="max-w-20 h-auto w-full" src="../img/DASSAI-drink.png"
-                                    alt>
-                                <p class="text-center text-white">DASSAI 45<br>
-                                    獺祭</p>
+                                data-aos="fade-up">
+                                <img class="max-w-20 h-auto w-full" src="../img/DASSAI-drink.png" alt />
+                                <p class="text-center text-white">
+                                    DASSAI 45<br />
+                                    獺祭
+                                </p>
                             </li>
                             <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
-                                data-aos="fade-up"><img class="max-w-20 h-auto w-full" src="./img/YAMANEKO-drink.png"
-                                    alt>
-                                <p class="text-center text-white">YAMANEKO IMO<br>
-                                    山猫 芋</p>
+                                data-aos="fade-up">
+                                <img class="max-w-20 h-auto w-full" src="./img/YAMANEKO-drink.png" alt />
+                                <p class="text-center text-white">
+                                    YAMANEKO IMO<br />
+                                    山猫 芋
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -127,21 +147,23 @@
                 <h1 class="reveal-text">
                     <span data-aos="custom-fade-up" class="text-2xl lg:text-3xl xl:text-4xl">基本情報/Bar Information</span>
                 </h1>
-                <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8"><img
-                        class="max-w-[450px] w-full h-auto" src="./img/information-section.png" alt
-                        data-aos="fade-right">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+                    <img class="max-w-[450px] w-full h-auto" src="./img/information-section.png" alt
+                        data-aos="fade-right" />
                     <div class="flex flex-col gap-4">
                         <h1 class="reveal-text">
-                            <span data-aos="custom-fade-up" class="text-xl md:text-2xl tracking-widest">Bar,
-                                1st STEP </span>
+                            <span data-aos="custom-fade-up" class="text-xl md:text-2xl tracking-widest">Bar, 1st STEP
+                            </span>
                         </h1>
                         <h1 class="reveal-text">
                             <span data-aos="custom-fade-up" class="text-xl md:text-2xl tracking-widest">営業時間/Business
-                                hour：月曜日～土曜日20:00 ~ 25:00 </span>
+                                hour：月曜日～土曜日20:00 ~ 25:00
+                            </span>
                         </h1>
                         <h1 class="reveal-text">
                             <span data-aos="custom-fade-up" class="text-xl md:text-2xl tracking-widest">Monday to
-                                Saturday 8pm to 1am </span>
+                                Saturday 8pm to 1am
+                            </span>
                         </h1>
                         <h1 class="reveal-text">
                             <span data-aos="custom-fade-up" class="text-xl md:text-2xl tracking-widest">定休日/ Regular
@@ -149,23 +171,61 @@
                         </h1>
                         <h1 class="reveal-text">
                             <span data-aos="custom-fade-up" class="text-xl md:text-2xl tracking-widest">所在地/Address
-                                :40/21 Phạm Viết Chánh, Phường 19, Bình Thạnh</span>
+                                :40/21 Phạm Viết Chánh, Phường 19, Bình
+                                Thạnh</span>
                         </h1>
                     </div>
                 </div>
             </div>
         </section>
-        <section></section>
+        <section class="location-section flex items-center justify-center py-12 md:py-16">
+            <div class="location-section__inner container flex flex-col items-center">
+                <h1 class="reveal-text">
+                    <span data-aos="custom-fade-up" class="text-2xl lg:text-3xl xl:text-4xl text-white">Location</span>
+                </h1>
+            </div>
+        </section>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="footer__inner text-white flex flex-col items-center border-t-[1px] border-[#9999] gap-4 py-8">
+
+            <a class="border-b-[1px] border-[#9999] pb-4 px-10" href="">
+                <div class="reveal-text">
+                    <img class="w-10 h-auto" src="./img/1stSTEP-y-logo.png" data-aos="custom-fade-up" alt />
+                </div>
+            </a>
+
+            <div class="flex flex-col gap-2 items-center border-b-[1px] pb-4 px-10 border-[#9999]">
+                <div class="reveal-text">
+                    <h5 data-aos="custom-fade-up">お問い合わせ・予約 / Contact</h5>
+                </div>
+                <div class="reveal-text">
+                    <div class="flex gap-4 text-xs" data-aos="custom-fade-up">
+                        <a href="mailto:1st.step.vn@gmail.com">1st.step.vn@gmail.com</a><a
+                            href="https://www.facebook.com/people/1st-STEP/61560350972272/">Facebook</a><a
+                            href="https://liff.line.me/1645278921-kWRPP32q/?accountId=358xskee">LINE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal-text">
+                <div class="flex gap-4" data-aos="custom-fade-up">
+                    <a href=""><img class="w-8 h-auto" src="./img/facebook-icon.png" alt /></a><a href=""><img
+                            class="w-8 h-auto" src="./img/LINE-icon.png" alt /></a>
+                    <a href=""><img class="w-8 h-auto" src="/img/instagram-icon.png" alt /></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-[1px] border-[#9999] text-xs text-white flex justify-center py-4">
+            <p>© 2024 NEXT MAKE All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1200,
             offset: 0,
-            once: true
-        }
-        );
+            once: true,
+        });
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./src/script.js"></script>
