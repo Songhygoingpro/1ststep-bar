@@ -5,7 +5,7 @@ body {
 }
 
 section {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .hero-section {
@@ -111,25 +111,35 @@ section {
   transform-origin: 0 100%;
 }
 
-/*headline animation*/
-.headline {
+/*headline reveal animation*/
+.reveal-text {
   margin: 0;
   overflow: hidden;
   height: 108%;
   line-height: 1;
 }
 
-.headline span {
+/* .reveal-text span { */
+/* display: block; */
+/* animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards; */
+/* opacity: 0 */
+/* } */
+/*  */
+/* @keyframes reveal { */
+/* 0% { transform: translateY(100%); opacity: 0; } */
+/* 100% { transform: translateY(0); opacity: 1; } */
+/* } */
+
+[data-aos="custom-fade-up"] {
   display: block;
-  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
-  opacity: 0
+  opacity: 0;
+  transform: translateY(100%);
 }
 
-@keyframes reveal {
-    0% { transform: translateY(100%); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+[data-aos="custom-fade-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
 }
-
 
 /*breakpoint*/
 @media screen and (max-width: 767px) {
