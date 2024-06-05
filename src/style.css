@@ -18,7 +18,7 @@ section {
 }
 
 .recruit-section {
-  height: calc(100vh - 400px);
+  height: auto;
 }
 
 /*navigation menu*/
@@ -154,7 +154,10 @@ section {
     height: auto;
   }
 
+}
+
+@media screen and (min-width: 1536px){
   .recruit-section {
-    height: auto;
+    height: calc(100vh - 400px);
   }
 }
