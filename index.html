@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1st STEP</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="./src/output.css"> -->
+    <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./src/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
@@ -19,13 +19,13 @@
 
         <nav class="md:block hidden">
             <ul class="flex gap-4 space-x-4">
-                <li class=""><a class="link !text-white" href="#bar">Bar</a></li>
+                <li class=""><a class="link text-white" href="#bar">Bar</a></li>
                 <li class="">
-                    <a class="link !text-white" href="#">Share office</a>
+                    <a class="link text-white" href="#">Share office</a>
                 </li>
-                <li class=""><a class="link !text-white" href="#">Recruit</a></li>
+                <li class=""><a class="link text-white" href="#">Recruit</a></li>
                 <li class="">
-                    <a class="link !text-white" href="#footer">Contact</a>
+                    <a class="link text-white" href="#footer">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -47,7 +47,7 @@
         </div>
     </header>
     <main>
-        <section class="hero-section section flex justify-center items-center" id="bar">
+        <section id="bar" class="hero-section section flex justify-center items-center" >
             <div
                 class="hero-section__inner container flex md:flex-row flex-col-reverse p-4 bg-[#1A1819] justify-center items-center gap-4 lg:gap-8 xl:gap-12">
                 <div class="grid gap-4">
@@ -195,7 +195,7 @@
                 </div>
             </a>
 
-            <div class="flex flex-col gap-2 items-center border-b-[1px] pb-4 px-10 border-[#9999]">
+            <div class="flex flex-col gap-4 items-center border-b-[1px] pb-4 px-10 border-[#9999]">
                 <div class="reveal-text">
                     <h5 data-aos="custom-fade-up">お問い合わせ・予約 / Contact</h5>
                 </div>
@@ -225,6 +225,11 @@
             duration: 1200,
             offset: 0,
             once: true,
+        });
+        document.querySelectorAll('img').forEach((img) => {
+            img.addEventListener('load', () => {
+                AOS.refresh();
+            });
         });
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
