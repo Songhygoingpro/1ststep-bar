@@ -1,10 +1,15 @@
 /*block reveal animation*/
-const hero_section = document.querySelectorAll('.hero-section__inner .reveal-text span');
+const hero_section = document.querySelectorAll('.hero-section .reveal-text span');
 hero_section.forEach((element, index) => {
-    element.setAttribute('data-aos-delay', `${index * 200}`);
+    element.setAttribute('data-aos-delay', `${index * 100}`);
 });
 
-const elements = document.querySelectorAll('[data-aos="fade-up"]');
-        elements.forEach((element, index) => {
-            element.setAttribute('data-aos-delay', `${index * 200}`);
-        });
+const fade_up = document.querySelectorAll('[data-aos="fade-up"]');
+fade_up.forEach((element, index) => {
+    element.setAttribute('data-aos-delay', `${index * 100}`);
+});
+
+const information_section = document.querySelectorAll('.information-section .reveal-text span');
+information_section.forEach((element, index) => {
+    element.setAttribute('data-aos-delay', `${index * 100}`);
+});
