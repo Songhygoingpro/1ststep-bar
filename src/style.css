@@ -17,6 +17,10 @@ section {
   height: calc(100vh - 88px);
 }
 
+.recruit-section {
+  height: calc(100vh - 400px);
+}
+
 /*navigation menu*/
 #burger {
   display: none;
@@ -116,6 +120,15 @@ section {
   transform-origin: 0 100%;
 }
 
+/* .section__cover { */
+  /* background-image: url("../img/page-cover.png"); */
+  /* width: 100%; */
+  /* height: 500px; */
+  /* background-size: cover; */
+  /* background-position: center center; */
+  /* background-repeat: repeat; */
+/* } */
+
 /*block reveal animation*/
 .reveal-text {
   margin: 0;
@@ -138,6 +151,10 @@ section {
 /*breakpoint*/
 @media screen and (max-width: 767px) {
   .hero-section {
+    height: auto;
+  }
+
+  .recruit-section {
     height: auto;
   }
 }

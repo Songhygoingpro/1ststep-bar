@@ -13,3 +13,8 @@ const information_section = document.querySelectorAll('.information-section .rev
 information_section.forEach((element, index) => {
     element.setAttribute('data-aos-delay', `${index * 100}`);
 });
+
+const recruit_section = document.querySelectorAll('.recruit-section .reveal-text [data-aos="custom-fade-up"]');
+recruit_section.forEach((element, index) => {
+    element.setAttribute('data-aos-delay', `${index * 100}`);
+});
