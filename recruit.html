@@ -13,14 +13,14 @@
 </head>
 
 <body>
-    <header class="flex w-full justify-between md:px-10 px-4 py-6 items-center fixed z-10">
+    <header class="header flex w-full justify-between md:px-10 px-4 py-6 items-center fixed top-0 z-10">
         <div>
-            <a href=""><img class="w-auto h-10 block fixed" src="./img/1stSTEP-logo.png" alt /></a>
+            <a href=""><img class="w-auto h-10 block" src="./img/1stSTEP-logo.png" alt /></a>
         </div>
 
         <nav class="md:block hidden">
             <ul class="flex gap-4 space-x-4">
-                <li class=""><a class="link text-white" href="#bar">Bar</a></li>
+                <li class=""><a class="link text-white" href="/index.html#bar">Bar</a></li>
                 <li class="">
                     <a class="link text-white" href="#">Share office</a>
                 </li>
@@ -32,14 +32,14 @@
         </nav>
         <div class="nav-menu__container block md:hidden">
             <input type="checkbox" id="burger" />
-            <label for="burger" class="nav-menu__button fixed">
+            <label for="burger" class="nav-menu__button">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
             <nav class="nav-menu">
                 <ul class="p-3 pb-3 m-0 flex flex-col gap-3">
-                    <li><a href="#bar">Bar</a></li>
+                    <li><a href="/index.html#bar">Bar</a></li>
                     <li><a href="/share-office.html">Share office</a></li>
                     <li><a href="/recruit.html">Recruit</a></li>
                     <li><a href="#footer">Contact</a></li>
@@ -51,11 +51,21 @@
         <section class="block">
             <div class=" flex justify-center items-center relative h-[400px]">
                 <img class="absolute z-[-1] top-0 left-0 w-full h-full object-cover" src="./img/page-cover.png" alt>
-                <div class="bg-[#1A1819] px-8 py-2 grid w-fit">
-                <h1 class="reveal-text ">
-                    <span data-aos="custom-fade-up"
-                        class="text-2xl lg:text-3xl xl:text-4xl text-white tracking-[0.3em] xl:tracking-[0.5em] ">採用/Recruit</span>
-                </h1></div>
+                <div class="m-0 overflow-hidden">
+                    <div
+                      class="bg-[#1A1819] px-8 py-2 grid"
+                      data-aos="custom-fade-right"
+                    >
+                      <h1 class="reveal-text">
+                        <span
+                          data-aos="custom-fade-up"
+                          data-aos-delay="1000"
+                          class="text-2xl lg:text-3xl xl:text-4xl text-white tracking-[0.3em] xl:tracking-[0.5em]"
+                          >採用/Recruit</span
+                        >
+                      </h1>
+                    </div>
+                  </div>
             </div>
         </section>
         <section class="recruit-section flex justify-center items-center">
