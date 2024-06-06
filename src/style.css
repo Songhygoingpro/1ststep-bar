@@ -19,7 +19,7 @@ section {
 
 .header {
   position: fixed;
-  /* top: 0; */
+  top: 0;
   transition: top ease 0.3s;
 }
 
