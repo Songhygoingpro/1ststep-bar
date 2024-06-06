@@ -80,18 +80,7 @@ section {
   background-color: #1f1f1f;
 }
 
-.nav-menu ul {
-  list-style-type: none;
-  padding: 1rem;
-}
-
-.nav-menu a {
-  display: block;
-  text-decoration: none;
-  color: white;
-}
-
-.nav-menu li {
+.menu-items li {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #424242;
 }
