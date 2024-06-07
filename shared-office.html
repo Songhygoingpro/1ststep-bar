@@ -5,14 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shared office</title>
+  <link rel="icon" href="/img/1stSTEP-favicon.png" type="image/png">
   <!-- <link rel="stylesheet" href="./src/output.css" /> -->
+
   <link rel="stylesheet" href="./src/style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
-  <header class="header flex w-full justify-between md:px-10 py-6 px-4 items-center z-10">
+  <header class="header bg-[#1A1819]  flex w-full justify-between md:px-10 py-6 px-4 items-center z-10">
     <div>
       <a href="index.html"><img class="w-auto h-10 block" src="./img/1stSTEP-logo.png" alt /></a>
     </div>
@@ -81,32 +84,48 @@
     </section>
   </main>
   <footer id="footer">
-    <div class="text-white flex flex-col items-center border-t-[1px] border-[#9999] gap-4 py-8">
-        <div class="reveal-text border-b-[1px] border-[#9999] pb-4 px-10">
-            <a href="index.html">
-                <img class="w-10 h-auto" src="./img/1stSTEP-y-logo.png" data-aos="custom-fade-up" alt /></a>
-        </div>
+    <div
+      class="text-white flex flex-col items-center border-t-[1px] border-[#9999] gap-4 py-8 md:px-8 px-4"
+    >
+      <div class="reveal-text border-b-[1px] border-[#9999] pb-4 px-10">
+        <a href="index.html">
+          <img
+            class="w-10 h-auto"
+            src="./img/1stSTEP-y-logo.png"
+            data-aos="custom-fade-up"
+            alt
+        /></a>
+      </div>
 
-        <div class="flex flex-col gap-4 items-center px-10 ">
-            <div class="reveal-text">
-                <h5 data-aos="custom-fade-up">お問い合わせ・予約 / Contact</h5>
-            </div>
-            <div class="reveal-text">
-                <div class="flex gap-4" data-aos="custom-fade-up">
-                    <a href="https://www.facebook.com/people/1st-STEP/61560350972272/"><img class="w-8 h-auto"
-                            src="./img/facebook-icon.png" alt /></a><a href=""><img class="w-8 h-auto"
-                            src="./img/LINE-icon.png" alt /></a>
-                    <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=358xskee"><img class="w-8 h-auto"
-                            src="/img/instagram-icon.png" alt /></a>
-                </div>
-            </div>
+      <div class="flex flex-col gap-4 items-center px-10">
+        <div class="reveal-text">
+          <h5 data-aos="custom-fade-up">お問い合わせ・予約 / Contact</h5>
         </div>
-
+        <div class="reveal-text">
+          <div class="flex gap-4" data-aos="custom-fade-up">
+            <a
+              href="mailto:1st.step.vn@gmail.com"
+              ><img class="w-8 h-auto" src="/img/email-icon.png" alt
+            /></a>
+            <a href="https://www.facebook.com/people/1st-STEP/61560350972272/"
+              ><img class="w-8 h-auto" src="./img/facebook-icon.png" alt /></a
+            ><a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=358xskee"
+              ><img class="w-8 h-auto" src="./img/LINE-icon.png" alt
+            /></a>
+            <a
+              href=""
+              ><img class="w-8 h-auto" src="/img/instagram-icon.png" alt
+            /></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="border-t-[1px] border-[#9999] text-xs text-white flex justify-center py-4">
-        <p>© 2024 1st STEP All Rights Reserved.</p>
+    <div
+      class="border-t-[1px] border-[#9999] text-xs text-white flex justify-center py-4"
+    >
+      <p>© 2024 1st STEP All Rights Reserved.</p>
     </div>
-</footer>
+  </footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({

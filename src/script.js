@@ -18,28 +18,3 @@ const recruit_section = document.querySelectorAll('.recruit-section .reveal-text
 recruit_section.forEach((element, index) => {
     element.setAttribute('data-aos-delay', `${index * 100}`);
 });
-
-
-let lastScrollTop = 0;
-const header = document.querySelector(".header");
-const burgerInput = document.getElementById("burger");
-
-window.addEventListener("scroll", function () {
-  let scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-  // if (scrollTop > lastScrollTop) {
-  //   header.style.top = "-88px";
-  //   burgerInput.checked = false;
-  // } else {
-  //   header.style.top = "0";
-  // }
-
-  // Apply the background when the header is off the top
-  if (scrollTop > 0) {
-    header.style.backgroundColor = "#1a1819";
-  } else {
-    header.style.backgroundColor = "transparent";
-  }
-
-  lastScrollTop = scrollTop;
-});
