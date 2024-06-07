@@ -1,165 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shared office</title>
-    <link rel="stylesheet" href="./src/output.css" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header
-      class="header flex w-full justify-between md:px-10 py-6 px-4 items-center z-10"
-    >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shared office</title>
+  <link rel="stylesheet" href="./src/output.css" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header flex w-full justify-between md:px-10 py-6 px-4 items-center z-10">
+    <div>
+      <a href="index.html"><img class="w-auto h-10 block" src="./img/1stSTEP-logo.png" alt /></a>
+    </div>
+    <div class="md:flex gap-8 hidden">
+      <nav>
+        <ul class="flex gap-4">
+          <li class=""><a class="link text-white" href="/index.html#bar">Bar</a></li>
+          <li class="">
+            <a class="link text-white" href="/shared-office.html">Shared office</a>
+          </li>
+          <li class="">
+            <a class="link text-white" href="/recruit.html">Recruit</a>
+          </li>
+          <li class="">
+            <a class="link text-white" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </nav>
       <div>
-        <a href="index.html"
-          ><img class="w-auto h-10 block" src="./img/1stSTEP-logo.png" alt
-        /></a>
+        <ul class="flex text-white">
+          <li><a href="">JP</a></li>
+          /
+          <li><a href="">EN</a></li>
+          /
+          <li><a href="">VN</a></li>
+        </ul>
       </div>
-      <div class="md:flex gap-8 hidden">
-        <nav>
-          <ul class="flex gap-4">
-            <li class=""><a class="link text-white" href="/index.html#bar">Bar</a></li>
-            <li class="">
-              <a class="link text-white" href="/shared-office.html">Shared office</a>
-            </li>
-            <li class="">
-              <a class="link text-white" href="/recruit.html">Recruit</a>
-            </li>
-            <li class="">
-              <a class="link text-white" href="#footer">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <ul class="flex text-white">
-            <li><a href="">JP</a></li>
-            /
-            <li><a href="">EN</a></li>
-            /
-            <li><a href="">VN</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="nav-menu__container block md:hidden">
-        <input type="checkbox" id="burger" />
-        <label for="burger" class="nav-menu__button">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <nav class="nav-menu flex flex-col gap-6 p-10">
-          <ul class="menu-items flex flex-col gap-3 text-white">
-            <li><a href="/index.html#bar">Bar</a></li>
-            <li><a href="/share-office.html">Shared office</a></li>
-            <li><a href="/recruit.html">Recruit</a></li>
-            <li><a href="#footer">Contact</a></li>
-          </ul>
-          <ul class="flex text-white border-b-[1px] border-[#424242] pb-2">
-            <li><a href="">JP</a></li>
-            /
-            <li><a href="">EN</a></li>
-            /
-            <li><a href="">VN</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="h-[100vh]">
-      <section class="block">
-        <div class="flex justify-center items-center relative h-[400px]">
-          <img
-            class="absolute z-[-1] top-0 left-0 w-full h-full object-cover"
-            src="./img/page-cover.png" rel="preload" data-aos="fadeUp"
-            alt
-          />
-          <div class="m-0 overflow-hidden px-4">
-            <div
-              class="bg-[#1A1819] px-4 py-2 grid"
-              data-aos="custom-fade-right"
-            >
-              <h1 class="reveal-text">
-                <span
-                  data-aos="custom-fade-up"
-                  data-aos-delay="1000"
-                  class=""
-                  >シェアオフィス/Shared Office</span
-                >
-              </h1>
-            </div>
+    </div>
+    <div class="nav-menu__container md:hidden block">
+      <input type="checkbox" id="burger" />
+      <label for="burger" class="nav-menu__button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-menu flex flex-col gap-6 p-10">
+        <ul class="menu-items flex flex-col gap-3 text-white">
+          <li><a href="/index.html#bar">Bar</a></li>
+          <li><a href="/share-office.html">Shared office</a></li>
+          <li><a href="/recruit.html">Recruit</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <ul class="flex text-white border-b-[1px] border-[#424242] pb-2">
+          <li><a href="">JP</a></li>
+          /
+          <li><a href="">EN</a></li>
+          /
+          <li><a href="">VN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="h-[100vh]">
+    <section class="block">
+      <div class="flex justify-center items-center relative h-[400px]">
+        <img class="absolute z-[-1] top-0 left-0 w-full h-full object-cover" src="./img/page-cover.png" rel="preload"
+          data-aos="fadeUp" alt />
+        <div class="m-0 overflow-hidden px-4">
+          <div class="bg-[#1A1819] px-4 py-2 grid" data-aos="custom-fade-right">
+            <h1 class="reveal-text">
+              <span data-aos="custom-fade-up" data-aos-delay="1000" class="">シェアオフィス/Shared Office</span>
+            </h1>
           </div>
         </div>
-      </section>
-    
-    </main>
-    <footer id="footer">
-      <div
-        class="footer__inner text-white flex flex-col items-center border-t-[1px] border-[#9999] gap-4 py-8"
-      >
-        <a class="border-b-[1px] border-[#9999] pb-4 px-10" href="">
-          <div class="reveal-text">
-            <img
-              class="w-10 h-auto"
-              src="./img/1stSTEP-y-logo.png"
-              data-aos="custom-fade-up"
-              alt
-            />
-          </div>
-        </a>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="text-white flex flex-col items-center border-t-[1px] border-[#9999] gap-4 py-8">
 
-        <div
-          class="flex flex-col gap-4 items-center border-b-[1px] pb-4 px-10 border-[#9999]"
-        >
-          <div class="reveal-text">
-            <h5 data-aos="custom-fade-up">お問い合わせ・予約 / Contact</h5>
-          </div>
-          <div class="reveal-text">
-            <div class="flex gap-4 text-xs" data-aos="custom-fade-up">
-              <a href="mailto:1st.step.vn@gmail.com">1st.step.vn@gmail.com</a
-              ><a
-                href="https://www.facebook.com/people/1st-STEP/61560350972272/"
-                >Facebook</a
-              ><a
-                href="https://liff.line.me/1645278921-kWRPP32q/?accountId=358xskee"
-                >LINE</a
-              >
-            </div>
-          </div>
+      <div class="reveal-text border-b-[1px] border-[#9999] pb-4 px-10"><a href="index.html">
+          <img class="w-10 h-auto" src="./img/1stSTEP-y-logo.png" data-aos="custom-fade-up" alt /> </a>
+      </div>
+
+
+      <div class="flex flex-col gap-4 items-center border-b-[1px] pb-4 px-10 border-[#9999]">
+        <div class="reveal-text">
+          <h5 data-aos="custom-fade-up">お問い合わせ・予約 / Contact</h5>
         </div>
         <div class="reveal-text">
-          <div class="flex gap-4" data-aos="custom-fade-up">
-            <a href=""
-              ><img class="w-8 h-auto" src="./img/facebook-icon.png" alt /></a
-            ><a href=""
-              ><img class="w-8 h-auto" src="./img/LINE-icon.png" alt
-            /></a>
-            <a href=""
-              ><img class="w-8 h-auto" src="/img/instagram-icon.png" alt
-            /></a>
+          <div class="flex gap-4 text-xs" data-aos="custom-fade-up">
+            <a class="hover:underline" href="mailto:1st.step.vn@gmail.com">1st.step.vn@gmail.com</a><a
+              class="hover:underline" href="https://www.facebook.com/people/1st-STEP/61560350972272/">Facebook</a><a
+              class="hover:underline" href="https://liff.line.me/1645278921-kWRPP32q/?accountId=358xskee">LINE</a>
           </div>
         </div>
       </div>
-      <div
-        class="border-t-[1px] border-[#9999] text-xs text-white flex justify-center py-4"
-      >
-        <p>© 2024 NEXT MAKE All Rights Reserved.</p>
+      <div class="reveal-text">
+        <div class="flex gap-4" data-aos="custom-fade-up">
+          <a href="https://www.facebook.com/people/1st-STEP/61560350972272/"><img class="w-8 h-auto" src="./img/facebook-icon.png" alt /></a><a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=358xskee"><img class="w-8 h-auto"
+              src="./img/LINE-icon.png" alt /></a>
+          <a href=""><img class="w-8 h-auto" src="/img/instagram-icon.png" alt /></a>
+        </div>
       </div>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1200,
-        offset: 0,
-        once: true,
-      });
-    </script>
-    <script src="./src/script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </body>
+    </div>
+    <div class="border-t-[1px] border-[#9999] text-xs text-white flex justify-center py-4">
+      <p>© 2024 NEXT MAKE All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      offset: 0,
+      once: true,
+    });
+  </script>
+  <script src="./src/script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
 </html>

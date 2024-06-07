@@ -144,7 +144,7 @@ section {
 
 [data-aos="custom-fade-right"] .reveal-text {
   text-align: center;
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;
   color: #ffffff;
   letter-spacing: 0.3em;
 }
@@ -167,13 +167,13 @@ section {
 
 @media (min-width: 1024px) {
   [data-aos="custom-fade-right"] .reveal-text {
-      font-size: 1.875rem; /* 30px */
+      font-size: 1.875rem; 
   }
 }
 
 @media (min-width: 1280px) {
   [data-aos="custom-fade-right"] .reveal-text {
-      font-size: 2.25rem; /* 36px */
+      font-size: 2.25rem; 
       letter-spacing: 0.5em;
   }
 }

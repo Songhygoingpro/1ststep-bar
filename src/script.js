@@ -27,16 +27,16 @@ const burgerInput = document.getElementById("burger");
 window.addEventListener("scroll", function () {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-  if (scrollTop > lastScrollTop) {
-    header.style.top = "-88px";
-    burgerInput.checked = false;
-  } else {
-    header.style.top = "0";
-  }
+  // if (scrollTop > lastScrollTop) {
+  //   header.style.top = "-88px";
+  //   burgerInput.checked = false;
+  // } else {
+  //   header.style.top = "0";
+  // }
 
   // Apply the background when the header is off the top
   if (scrollTop > 0) {
-    header.style.backgroundColor = "#1f1f1f";
+    header.style.backgroundColor = "#1a1819";
   } else {
     header.style.backgroundColor = "transparent";
   }
