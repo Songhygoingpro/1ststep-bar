@@ -149,8 +149,6 @@ section {
   letter-spacing: 0.3em;
 }
 
-
-
 /*breakpoint*/
 @media screen and (max-width: 767px) {
   .hero-section {
