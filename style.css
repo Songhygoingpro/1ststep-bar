@@ -1,12 +1,12 @@
 html {
   scroll-behavior: smooth;
-  /* scroll-padding-top: 140px; */
   }
 
 body {
   margin: 0;
   box-sizing: border-box;
   background-color: #1a1819;
+  color: white;
 }
 
 section {
@@ -136,14 +136,17 @@ section {
   transform:scaleX(1)
 }
 
-
+[data-aos="custom-fade-right"] .reveal-block {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.3em;
+}
 
 /*breakpoint*/
 @media screen and (max-width: 767px) {
   .hero-section {
     height: auto;
   }
-
 }
 
 @media screen and (min-width: 1536px){
@@ -151,12 +154,7 @@ section {
     height: calc(100vh - 400px);
   }
 }
-[data-aos="custom-fade-right"] .reveal-block {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #ffffff;
-  letter-spacing: 0.3em;
-}
+
 @media (min-width: 1024px) {
   [data-aos="custom-fade-right"] .reveal-block {
       font-size: 1.875rem; 
