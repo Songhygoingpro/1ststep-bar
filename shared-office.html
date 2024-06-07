@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-
+  <link rel="preload" href="/img/page-cover.png" as="image">
 </head>
 
 <body>
@@ -65,7 +65,7 @@
   <main class="h-[100vh]">
     <section class="block">
       <div class="flex justify-center items-center relative h-[400px]">
-        <img class=" w-full h-full object-cover absolute z-[-1] top-0 left-0" src="./img/page-cover.png" loading="lazy"
+        <img class=" w-full h-full object-cover absolute z-[-1] top-0 left-0" src="./img/page-cover.png" loading="lazy" rel="preload"
           data-aos="fadeUp" alt />
         <div class="m-0 overflow-hidden px-4">
           <div class="bg-[#1A1819] px-4 py-2 " data-aos="custom-fade-right">
@@ -91,9 +91,9 @@
         /></a>
       </div>
 
-      <div class="flex flex-col items-center gap-4 px-10">
+      <div class="flex flex-col items-center gap-4 px-4">
         <div class="reveal-block">
-          <h5 class="text-center leading-6" data-aos="custom-fade-up">お問い合わせ・予約 / Contact</h5>
+          <h5 data-aos="custom-fade-up">お問い合わせ・予約 / Contact</h5>
         </div>
         <div class="reveal-block">
           <div class="flex gap-4" data-aos="custom-fade-up">
