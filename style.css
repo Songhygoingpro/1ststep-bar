@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 140px;
   }
 
 body {
@@ -83,7 +84,7 @@ section {
   transform: translateX(0);
 }
 
-/*navigation menu hover effect*/
+/*navigation menu's item hover effect*/
 .link {
   position: relative;
   display: inline-block;
