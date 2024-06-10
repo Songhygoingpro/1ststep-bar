@@ -18,3 +18,4 @@ const recruit_section = document.querySelectorAll('.recruit-section .reveal-bloc
 recruit_section.forEach((element, index) => {
     element.setAttribute('data-aos-delay', `${index * 100}`);
 });
+ 
