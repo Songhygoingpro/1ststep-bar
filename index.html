@@ -265,20 +265,6 @@
         AOS.refresh();
       });
     });
-
-      document.querySelectorAll(".lang-switcher").forEach((switcher) => {
-            switcher.addEventListener("click", function () {
-
-                document.querySelectorAll(".expand-icon").forEach((icon) => {
-                  icon.classList.toggle("rotate-180");
-                });
-                
-                document.querySelector(".lang-menu").classList.toggle('opacity-100');
-
-                document.querySelector(".lang-menu--mobile").classList.toggle("opacity-100");
-                document.querySelector(".lang-menu--mobile").classList.toggle("scale-y-100");
-                document.querySelector(".lang-menu--mobile").classList.toggle("h-auto");
-              })});
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/script.js"></script>

@@ -39,37 +39,51 @@
             <a class="link" href="#footer">Contact</a>
           </li>
         </ul>
-        <ul class="flex">
-          <li><a href="">JP</a></li>
-          /
-          <li><a href="">EN</a></li>
-          /
-          <li><a href="">VN</a></li>
-        </ul>
-      </nav>
-      <div class="nav-menu__container md:hidden block">
-        <input type="checkbox" id="burger" />
-        <label for="burger" class="nav-menu__button">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <nav class="nav-menu flex flex-col gap-6 p-10">
-          <ul class="menu-items flex flex-col gap-3">
-            <li><a href="/index.html#bar">Bar</a></li>
-            <li><a href="/shared-office.html">Shared office</a></li>
-            <li><a href="/recruit.html">Recruit</a></li>
-            <li><a href="#footer">Contact</a></li>
+        <div class="relative md:block hidden">
+        <button id="" class="lang-switcher flex items-center gap-3">
+          <span>日本語</span><img id="" class="expand-icon w-4 h-auto transition-transform duration-300 ease-in-out"
+            src="/img/expand-more-icon.png" alt />
+        </button>
+        <div id=""
+          class="lang-menu w-40 p-6 pr-16 text-black bg-white opacity-0 transition-opacity duration-300 ease-in-out rounded-xl absolute top-10 right-0">
+          <ul class="lang-menu-items grid gap-4 ">
+            <li class="lang-menu-item"><a href="">日本語</a></li>
+            <li class="lang-menu-item"><a href="">English</a></li>
+            <li class="lang-menu-item"><a href="">Tiếng Việt</a></li>
           </ul>
-          <ul class="flex pb-2 border-b-[1px] border-[#424242]">
-            <li><a href="">JP</a></li>
-            /
-            <li><a href="">EN</a></li>
-            /
-            <li><a href="">VN</a></li>
-          </ul>
-        </nav>
+        </div>
       </div>
+    </nav>
+    <div class="nav-menu__container md:hidden block">
+      <input type="checkbox" id="burger" />
+      <label for="burger" class="nav-menu__button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-menu flex flex-col gap-6 p-10">
+        <ul class="menu-items flex flex-col gap-3">
+          <li><a href="/index.html#bar">Bar</a></li>
+          <li><a href="/shared-office.html">Shared office</a></li>
+          <li><a href="/recruit.html">Recruit</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <div class="pb-2 border-b-[1px] border-[#424242]">
+        <button class="lang-switcher flex items-center gap-3">
+          <span>日本語</span><img class="expand-icon w-4 h-auto transition-transform duration-300 ease-in-out"
+            src="/img/expand-more-icon.png" alt />
+        </button>
+        <div 
+          class="lang-menu--mobile h-0 scale-y-0 origin-[100%_0%] opacity-0 transition-all duration-500 ease-in-out">
+          <ul class="lang-menu-items grid justify-end gap-4 py-4">
+            <li class="lang-menu-item"><a href="">日本語</a></li>
+            <li class="lang-menu-item"><a href="">English</a></li>
+            <li class="lang-menu-item"><a href="">Tiếng Việt</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    </div>
     </header>
     <main>
       <section class="block">

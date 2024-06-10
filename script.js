@@ -18,4 +18,20 @@ const recruit_section = document.querySelectorAll('.recruit-section .reveal-bloc
 recruit_section.forEach((element, index) => {
     element.setAttribute('data-aos-delay', `${index * 100}`);
 });
- 
+
+
+/*Lanauage drop-down menu*/
+
+document.querySelectorAll(".lang-switcher").forEach((switcher) => {
+    switcher.addEventListener("click", function () {
+
+        document.querySelectorAll(".expand-icon").forEach((icon) => {
+          icon.classList.toggle("rotate-180");
+        });
+        
+        document.querySelector(".lang-menu").classList.toggle('opacity-100');
+
+        document.querySelector(".lang-menu--mobile").classList.toggle("opacity-100");
+        document.querySelector(".lang-menu--mobile").classList.toggle("scale-y-100");
+        document.querySelector(".lang-menu--mobile").classList.toggle("h-32");
+      })});
