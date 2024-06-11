@@ -30,7 +30,8 @@ document.querySelectorAll(".lang-switcher").forEach((switcher) => {
         });
         
         document.querySelector(".lang-menu").classList.toggle('opacity-100');
-
+        document.querySelector(".lang-menu").classList.toggle("scale-y-100");
+        
         document.querySelector(".lang-menu--mobile").classList.toggle("opacity-100");
         document.querySelector(".lang-menu--mobile").classList.toggle("scale-y-100");
         document.querySelector(".lang-menu--mobile").classList.toggle("h-32");
