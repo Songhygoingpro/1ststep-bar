@@ -18,7 +18,7 @@ section {
 }
 
 .recruit-section {
-  height: auto;
+  height: calc(100vh - 488px);
 }
 
 /*navigation menu drawer*/
@@ -146,13 +146,13 @@ section {
 /*breakpoint*/
 @media screen and (max-width: 768px) {
   .hero-section {
-    /* height: auto; */
+    height: auto;
   }
 }
 
-@media screen and (min-width: 1536px){
+@media screen and (max-width: 1536px){
   .recruit-section {
-    height: calc(100vh - 488px);
+    height: auto;
   }
 }
 
