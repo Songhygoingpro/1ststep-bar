@@ -20,7 +20,7 @@ recruit_section.forEach((element, index) => {
 });
 
 
-/*Lanauage drop-down menu*/
+/*Lanauage dropdown menu*/
 
 document.querySelectorAll(".lang-switcher").forEach((switcher) => {
     switcher.addEventListener("click", function () {

@@ -21,7 +21,7 @@ section {
   height: auto;
 }
 
-/*navigation menu*/
+/*navigation menu drawer*/
 #burger {
   display: none;
 }
@@ -111,8 +111,8 @@ section {
 .reveal-block {
   margin: 0;
   overflow: hidden;
-  height: 108%;
   line-height: 1;
+  padding-bottom: 0.5rem;
 }
 
 [data-aos="custom-fade-up"] {
@@ -152,7 +152,7 @@ section {
 
 @media screen and (min-width: 1536px){
   .recruit-section {
-    height: calc(100vh - 400px);
+    height: calc(100vh - 488px);
   }
 }
 
