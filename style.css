@@ -17,10 +17,6 @@ section {
   height: calc(100vh - 88px);
 }
 
-.recruit-section {
-  height: calc(100vh - 488px);
-}
-
 /*navigation menu drawer*/
 #burger {
   display: none;
@@ -112,7 +108,7 @@ section {
   margin: 0;
   overflow: hidden;
   line-height: 1;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 [data-aos="custom-fade-up"] {
@@ -146,7 +142,7 @@ section {
 /*breakpoint*/
 @media screen and (max-width: 768px) {
   .hero-section {
-    height: auto;
+    /* height: auto; */
   }
 }
 
