@@ -13,11 +13,11 @@
 </head>
 
 <body>
-  <header class="bg-[#1A1819] flex justify-between items-center py-6 px-4 md:px-10 w-full sticky top-0 z-10">
+  <header class="bg-[#1A1819] w-full flex justify-between items-center py-6 px-4 md:px-10 sticky top-0 z-10">
     <div>
       <a href="/jp/index.html"><img class="w-auto h-10 block" src="/img/1stSTEP-logo.png" loading="lazy" alt /></a>
     </div>
-    <nav class="md:flex hidden gap-8">
+    <nav class="hidden md:flex gap-8">
       <ul class="flex gap-4">
         <li class=""><a class="link" href="/jp/index.html">Bar</a></li>
         <li class="">
@@ -30,7 +30,7 @@
           <a class="link" href="#footer">Contact</a>
         </li>
       </ul>
-      <div class="relative md:block hidden">
+      <div class="relative hidden md:block">
         <button id="" class="lang-switcher flex items-center gap-3">
           <span>JP/EN/VN</span><img id="" class="expand-icon w-4 h-auto transition-transform duration-300 ease-in-out"
             src="/img/expand-more-icon.png" alt />
@@ -49,7 +49,7 @@
       </div>
     </nav>
     <!-- nav menu drawer for mobile screen -->
-    <div class="nav-menu__container md:hidden block">
+    <div class="nav-menu__container block md:hidden ">
       <input type="checkbox" id="burger" />
       <label for="burger" class="nav-menu__button">
         <span></span>
@@ -80,12 +80,12 @@
       </nav>
     </div>
   </header>
-  <main class="h-[100vh]">
+  <main class="shared-office">
     <section class="block">
       <div class="flex justify-center items-center relative h-[400px]">
         <img class=" w-full h-full object-cover absolute z-[-1] top-0 left-0" src="/img/page-cover.png" loading="lazy"
           data-aos="fadeUp" alt />
-        <div class="m-0 overflow-hidden px-4">
+        <div class=" overflow-hidden m-0 px-4">
           <div class="bg-[#1A1819] pl-10 xl:pl-12 pr-8 py-0 md:py-2 " data-aos="custom-fade-right">
             <h1 class="reveal-block">
               <span data-aos="custom-fade-up" data-aos-delay="1000">シェアオフィス</span>

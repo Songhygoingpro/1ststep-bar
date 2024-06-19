@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="bg-[#1A1819] flex justify-between items-center px-4 py-6 md:px-10 w-full sticky top-0 z-10">
+  <header class="bg-[#1A1819] w-full flex justify-between items-center px-4 py-6 md:px-10 sticky top-0 z-10">
     <div>
       <a href="/vn/index.html"><img class="w-auto h-10 block" src="/img/1stSTEP-logo.png" loading="lazy"
           alt /></a>
@@ -30,13 +30,13 @@
           <a class="link" href="#footer">Câu hỏi</a>
         </li>
       </ul>
-      <div class="relative md:block hidden">
+      <div class="relative hidden md:block">
         <button class="lang-switcher flex items-center gap-3">
           <span>JP/EN/VN</span><img class="expand-icon w-4 h-auto transition-transform duration-300 ease-in-out"
             src="/img/expand-more-icon.png" alt />
         </button>
         <div
-          class="lang-menu w-40 p-6 pr-16 text-black bg-white opacity-0 scale-y-0 origin-[100%_0%] transition-all duration-300 ease-in-out rounded-xl absolute top-10 right-0">
+          class="lang-menu bg-white w-40 p-6 pr-16 text-black opacity-0 scale-y-0 origin-[100%_0%] transition-all duration-300 ease-in-out rounded-xl absolute top-10 right-0">
           <ul class="lang-menu-items grid gap-4 ">
             <li class="lang-menu-item"><a href="/jp/index.html" class="hover:underline hover:underline-offset-4">日本語</a></li>
             <li class="lang-menu-item"><a href="/en/index.html" class="hover:underline hover:underline-offset-4">English</a></li>
@@ -46,7 +46,7 @@
       </div>
     </nav>
     <!-- nav menu drawer for mobile screen -->
-    <div class="nav-menu__container md:hidden block">
+    <div class="nav-menu__container block md:hidden">
       <input type="checkbox" id="burger" />
       <label for="burger" class="nav-menu__button">
         <span></span>
@@ -80,7 +80,7 @@
   <main>
     <section class="hero-section flex justify-center items-center py-4 md:py-6" id="bar">
       <div
-        class="hero-section__inner container flex md:flex-row flex-col-reverse justify-center items-center gap-4 lg:gap-8 xl:gap-12 px-4 md:px-6 lg:px-8">
+        class="hero-section__inner container flex flex-col-reverse md:flex-row justify-center items-center gap-4 lg:gap-8 xl:gap-12 px-4 md:px-6 lg:px-8">
         <div class="flex flex-col gap-2 md:gap-4">
           <h1 class="reveal-block">
             <span class="text-center text-2xl lg:text-3xl xl:text-4xl tracking-wide xl:tracking-widest"
@@ -111,7 +111,7 @@
             <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-8 overflow-hidden">
               <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
                 data-aos="fade-up">
-                <img class="max-w-20 h-auto w-full" src="/img/KURO-drink.png" loading="lazy" alt />
+                <img class="max-w-20 w-full h-auto" src="/img/KURO-drink.png" loading="lazy" alt />
                 <p class="text-center">
                   KURO KIRISHIMA<br />
                   黒霧島
@@ -127,7 +127,7 @@
               </li>
               <li class="bg-[#272727] flex flex-col items-center gap-4 py-6 px-4 sm:px-16 border-b-2 border-[#999999]"
                 data-aos="fade-up">
-                <img class="max-w-20 h-auto w-full" src="/img/IICHIKO-drink.png" loading="lazy" alt />
+                <img class="max-w-20 w-full h-auto" src="/img/IICHIKO-drink.png" loading="lazy" alt />
                 <p class="text-center">
                   IICHIKO<br />
                   いいちこ
@@ -141,7 +141,7 @@
                   だいやめ
                 </p>
               </li>
-              <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
+              <li class="bg-[#272727] flex flex-col items-center gap-4 py-6 px-4 sm:px-16 border-b-2 border-[#999999]"
                 data-aos="fade-up">
                 <img class="max-w-20 w-full h-auto" src="/img/DASSAI-drink.png" loading="lazy" alt />
                 <p class="text-center">
@@ -149,7 +149,7 @@
                   獺祭
                 </p>
               </li>
-              <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
+              <li class="bg-[#272727] flex flex-col items-center gap-4 py-6 px-4 sm:px-16 border-b-2 border-[#999999]"
                 data-aos="fade-up">
                 <img class="max-w-20 w-full h-auto" src="/img/YAMANEKO-drink.png" loading="lazy" alt />
                 <p class="text-center">
