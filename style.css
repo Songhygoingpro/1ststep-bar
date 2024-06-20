@@ -22,7 +22,7 @@ section {
 
 /*Adjust or remove the height as we got the shared-office contents*/
 .shared-office {
-  height:100vh;
+  height:calc(100vh - 88px);
 }
 
 /*navigation menu drawer*/
@@ -148,17 +148,6 @@ section {
 }
 
 /*breakpoint*/
-@media screen and (max-width: 768px) {
-  .hero-section {
-    /* height: auto; */
-  }
-}
-
-@media screen and (max-width: 1536px){
-  .recruit-section {
-    height: auto;
-  }
-}
 
 @media (min-width: 1024px) {
   [data-aos="custom-fade-right"] .reveal-block {
