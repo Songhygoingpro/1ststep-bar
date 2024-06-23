@@ -20,7 +20,6 @@ section {
   height: calc(100vh - 88px);
 }
 
-/*Adjust or remove the height as we got the shared-office contents*/
 .shared-office {
   height:calc(100vh - 88px);
 }

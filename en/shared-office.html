@@ -131,6 +131,12 @@
       offset: 0,
       once: true,
     });
+
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("load", () => {
+        AOS.refresh();
+      });
+    });
   </script>
   <script src="/script.js"></script>
 </body>
