@@ -138,3 +138,11 @@ section {
 [data-aos="custom-fade-right"].aos-animate {
   transform:scaleX(1)
 }
+
+@media screen and (max-width: 768px) {
+
+.hero-section {
+  height: auto;
+}
+
+}
