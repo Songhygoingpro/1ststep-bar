@@ -16,12 +16,34 @@ section {
   overflow: hidden;
 }
 
+.top-page {
+  height: calc(100vh - 88px);
+}
+
 .hero-section {
   height: calc(100vh - 88px);
 }
 
 .shared-office {
   height:calc(100vh - 88px);
+}
+
+.bar-image {
+  background-image: url('./img/bar-link-image.png');
+  width: 50vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+}
+
+.sharedoffice-image {
+  background-image: url("./img/sharedoffice-link-image.png");
+  width: 50vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
 }
 
 /*navigation menu drawer*/
