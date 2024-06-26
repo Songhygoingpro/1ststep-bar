@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1st STEP</title>
+  <link rel="icon" href="/img/1stSTEP-favicon.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="bg-[#1A1819] w-full flex justify-between items-center px-4 py-6 md:px-10 sticky top-0 z-10">
+    <div>
+      <a href="/vn/index.html"><img class="w-auto h-10 block" src="/img/1stSTEP-logo.png" loading="lazy"
+          alt /></a>
+    </div>
+    <nav class="md:flex hidden gap-8">
+      <ul class="flex gap-4">
+        <li class=""><a class="link" href="#bar">Quán bar</a></li>
+        <li class="">
+          <a class="link" href="/vn/sharedoffice.html">Văn phòng chia sẻ</a>
+        </li>
+        <li class="">
+          <a class="link" href="/vn/recruit.html">Tuyển dụng</a>
+        </li>
+        <li class="">
+          <a class="link" href="#footer">Câu hỏi</a>
+        </li>
+      </ul>
+      <div class="relative hidden md:block">
+        <button class="lang-switcher flex items-center gap-3">
+          <span>JP/EN/VN</span><img class="expand-icon w-4 h-auto transition-transform duration-300 ease-in-out"
+            src="/img/expand-more-icon.png" alt />
+        </button>
+        <div
+          class="lang-menu bg-white w-40 p-6 pr-16 text-black opacity-0 scale-y-0 origin-[100%_0%] transition-all duration-300 ease-in-out rounded-xl absolute top-10 right-0">
+          <ul class="lang-menu-items grid gap-4 ">
+            <li class="lang-menu-item"><a href="/jp/index.html" class="hover:underline hover:underline-offset-4">日本語</a></li>
+            <li class="lang-menu-item"><a href="/en/index.html" class="hover:underline hover:underline-offset-4">English</a></li>
+            <li class="lang-menu-item"><a href="/vn/index.html" class="hover:underline hover:underline-offset-4">Tiếng Việt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav menu drawer for mobile screen -->
+    <div class="nav-menu__container block md:hidden">
+      <input type="checkbox" id="burger" />
+      <label for="burger" class="nav-menu__button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-menu flex flex-col gap-6 p-10">
+        <ul class="menu-items flex flex-col gap-3">
+          <li><a href="#bar">Quán bar</a></li>
+          <li><a href="/vn/sharedoffice.html">Văn phòng chia sẻ</a></li>
+          <li><a href="/vn/recruit.html">Tuyển dụng</a></li>
+          <li><a href="#footer">Câu hỏi</a></li>
+        </ul>
+        <div class="pb-2 border-b-[1px] border-[#424242]">
+          <button class="lang-switcher flex items-center gap-3">
+            <span>JP/EN/VN</span><img class="expand-icon w-4 h-auto transition-transform duration-300 ease-in-out"
+              src="/img/expand-more-icon.png" alt />
+          </button>
+          <div
+            class="lang-menu--mobile h-0 scale-y-0 origin-[100%_0%] opacity-0 transition-all duration-500 ease-in-out">
+            <ul class="lang-menu-items grid justify-end gap-4 py-4">
+              <li class="lang-menu-item"><a href="/jp/index.html">日本語</a></li>
+              <li class="lang-menu-item"><a href="/en/index.html">English</a></li>
+              <li class="lang-menu-item"><a href="/vn/index.html">Tiếng Việt</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section flex justify-center items-center py-10 md:py-16" id="bar">
+      <div
+        class="hero-section__inner container flex flex-col-reverse md:flex-row justify-center items-center gap-4 lg:gap-8 xl:gap-12 px-4 md:px-6 lg:px-8">
+        <div class="flex flex-col gap-2 md:gap-4">
+          <h1 class="reveal-block">
+            <span class="text-center text-2xl lg:text-3xl xl:text-4xl tracking-wide xl:tracking-widest"
+              data-aos="custom-fade-up">Quán Bar/Văn phòng chia sẻ tại</span>
+          </h1>
+          <h1 class="reveal-block">
+            <span class="text-center text-2xl lg:text-3xl xl:text-4xl tracking-wide xl:tracking-widest"
+              data-aos="custom-fade-up">Thành phố Hồ Chí Minh, Việt Nam.</span>
+          </h1>
+        </div>
+        <div>
+          <img class="max-w-[700px] w-full h-auto" src="/img/hero-section.png" data-aos="fade-left" loading="lazy"
+            alt />
+        </div>
+      </div>
+    </section>
+    <section class="menu-section flex justify-center items-center py-12 md:py-16">
+      <div class="menu-section__inner container flex flex-col items-center gap-10 md:gap-16 px-4 md:px-6 lg:px-8">
+        <h1 class="reveal-block">
+          <span class="text-2xl lg:text-3xl xl:text-4xl border-b-2 border-white pb-4"
+            data-aos="custom-fade-up">Thực đơn</span>
+        </h1>
+        <div class="menu-section__content flex flex-col items-center gap-8">
+          <h2 class="reveal-block">
+            <span class="text-xl md:text-2xl text-center" data-aos="custom-fade-up">Rượu sake Nhật Bản, Bia, Thức uống không cồn, Đồ ăn nhẹ</span>
+          </h2>
+          <div class="flex flex-col items-end gap-4">
+            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-8 overflow-hidden">
+              <li class="py-6 px-4 sm:px-16 bg-[#272727] flex flex-col items-center gap-4 border-b-2 border-[#999999]"
+                data-aos="fade-up">
+                <img class="max-w-20 w-full h-auto" src="/img/KURO-drink.png" loading="lazy" alt />
+                <p class="text-center">
+                  KURO KIRISHIMA<br />
+                  黒霧島
+                </p>
+              </li>
+              <li class="bg-[#272727] flex flex-col items-center gap-4 py-6 px-4 sm:px-16 border-b-2 border-[#999999]"
+                data-aos="fade-up">
+                <img class="max-w-20 w-full h-auto" src="/img/AKA-drink.png" loading="lazy" alt />
+                <p class="text-center">
+                  AKA KIRISHIMA<br />
+                  赤霧島
+                </p>
+              </li>
+              <li class="bg-[#272727] flex flex-col items-center gap-4 py-6 px-4 sm:px-16 border-b-2 border-[#999999]"
+                data-aos="fade-up">
+                <img class="max-w-20 w-full h-auto" src="/img/IICHIKO-drink.png" loading="lazy" alt />
+                <p class="text-center">
+                  IICHIKO<br />
+                  いいちこ
+                </p>
+              </li>
+              <li class="bg-[#272727] flex flex-col items-center gap-4 py-6 px-4 sm:px-16 border-b-2 border-[#999999]"
+                data-aos="fade-up">
+                <img class="max-w-20 w-full h-auto" src="/img/DAIYAME-drink.png" loading="lazy" alt />
+                <p class="text-center">
+                  DAIYAME 25<br />
+                  だいやめ
+                </p>
+              </li>
+              <li class="bg-[#272727] flex flex-col items-center gap-4 py-6 px-4 sm:px-16 border-b-2 border-[#999999]"
+                data-aos="fade-up">
+                <img class="max-w-20 w-full h-auto" src="/img/DASSAI-drink.png" loading="lazy" alt />
+                <p class="text-center">
+                  DASSAI 45<br />
+                  獺祭
+                </p>
+              </li>
+              <li class="bg-[#272727] flex flex-col items-center gap-4 py-6 px-4 sm:px-16 border-b-2 border-[#999999]"
+                data-aos="fade-up">
+                <img class="max-w-20 w-full h-auto" src="/img/YAMANEKO-drink.png" loading="lazy" alt />
+                <p class="text-center">
+                  YAMANEKO IMO<br />
+                  山猫 芋
+                </p>
+              </li>
+            </ul>
+            <div class="reveal-block">
+              <p data-aos="custom-fade-up">Đây là một ví dụ về thực đơn</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="information-section flex justify-center items-center py-10 md:py-16">
+      <div class="information-section__inner container flex flex-col items-center gap-12 md:gap-16 px-4 md:px-6 lg:px-8">
+        <h1 class="reveal-block">
+          <span class="text-2xl lg:text-3xl xl:text-4xl border-b-2 border-white pb-4" data-aos="custom-fade-up">Thông tin cơ bản</span>
+        </h1>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+          <img class="max-w-[450px] w-full h-auto" src="/img/information-section.png" loading="lazy" alt
+            data-aos="fade-right" />
+          <div class="flex flex-col gap-0 md:gap-2">
+            <h3 class="reveal-block">
+              <span class="text-xl md:text-2xl tracking-widest pb-4 md:pb-6" data-aos="custom-fade-up">Quán bar, 1st STEP
+              </span>
+            </h3>
+            <h3 class="reveal-block">
+              <span class="text-xl md:text-2xl tracking-widest" data-aos="custom-fade-up">Giờ mở cửa: Thứ hai - Thứ bảy 20:00 - 24:00
+              </span>
+            </h3>
+            <h3 class="reveal-block">
+              <span class="text-xl md:text-2xl tracking-widest" data-aos="custom-fade-up">Ngày nghỉ Cố định: Chủ nhật
+              </span>
+            </h3>
+            <h3 class="reveal-block">
+              <span class="text-xl md:text-2xl tracking-widest" data-aos="custom-fade-up">Địa chỉ : 40/21 Phạm Viết Chánh, Phường 19, Bình Thạnh</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="location-section flex items-center justify-center py-12 md:py-16">
+      <div class="location-section__inner container flex flex-col items-center gap-12 md:gap-16 px-4 md:px-6 lg:px-8">
+        <h1 class="reveal-block">
+          <span data-aos="custom-fade-up"
+            class="text-2xl lg:text-3xl xl:text-4xl border-b-2 border-white pb-4">Vị trí</span>
+        </h1>
+        <div class="w-full h-64 sm:h-80 md:h-96 lg:h-[600px] xl:h-[450px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.95503374226237!2d106.7107989!3d10.7898123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529d5226c046d%3A0xf18c7316468c988b!2sGutta!5e0!3m2!1sen!2skh!4v1717981842694!5m2!1sen!2skh"
+            class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            data-aos="fadeUp">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="flex flex-col items-center gap-4 py-8 px-4 md:px-8 border-t-[1px] border-[#9999]">
+      <div class="reveal-block pb-4 px-10 border-b-[1px] border-[#9999]">
+        <a href="/vn/index.html">
+          <img class="w-10 h-auto" src="/img/1stSTEP-y-logo.png" data-aos="custom-fade-up" loading="lazy" alt /></a>
+      </div>
+
+      <div class="flex flex-col items-center px-4">
+        <div class="reveal-block">
+          <h5 data-aos="custom-fade-up">Câu hỏi・Đặt bàn</h5>
+        </div>
+        <div class="reveal-block">
+          <div class="flex gap-2" data-aos="custom-fade-up">
+            <a href="mailto:1st.step.vn@gmail.com"><img class="w-6 h-auto" src="/img/email-icon.png" loading="lazy"
+                alt /></a>
+            <a href="https://www.facebook.com/people/1st-STEP/61560350972272/"><img class="w-6 h-auto"
+                src="/img/facebook-icon.png" loading="lazy" alt /></a><a
+              href="https://liff.line.me/1645278921-kWRPP32q/?accountId=358xskee"><img class="w-6 h-auto"
+                src="/img/LINE-icon.png" loading="lazy" alt /></a>
+            <a href=""><img class="w-6 h-auto" src="/img/instagram-icon.png" loading="lazy" alt /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-xs flex justify-center py-4 border-t-[1px] border-[#9999]">
+      <p>© 2024 1st STEP All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      offset: 0,
+      once: true,
+    });
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("load", () => {
+        AOS.refresh();
+      });
+    });
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
