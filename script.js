@@ -19,6 +19,10 @@ recruit_section.forEach((element, index) => {
     element.setAttribute('data-aos-delay', `${index * 100}`);
 });
 
+const sharedoffice_section = document.querySelectorAll('.sharedoffice-section .reveal-block [data-aos="custom-fade-up"]');
+sharedoffice_section.forEach((element, index) => {
+    element.setAttribute('data-aos-delay', `${index * 100}`);
+});
 
 /*Lanauage dropdown menu*/
 

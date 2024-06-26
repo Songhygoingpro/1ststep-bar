@@ -24,10 +24,6 @@ section {
   height: calc(100vh - 88px);
 }
 
-.shared-office {
-  height:calc(100vh - 88px);
-}
-
 .bar-image {
   background-image: url('./img/bar-link-image.png');
   width: 100%;
