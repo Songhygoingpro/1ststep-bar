@@ -17,7 +17,7 @@ section {
 }
 
 .top-page {
-  height: calc(100vh - 88px);
+  height: calc(100dvh - 88px);
 }
 
 .hero-section {
