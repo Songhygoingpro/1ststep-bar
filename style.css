@@ -157,10 +157,29 @@ section {
   transform:scaleX(1)
 }
 
+[data-aos="custom-fade-upleft"] {
+  display: block;
+  transform: translate(8px, 8px);
+}
+
+[data-aos="custom-fade-upleft"].aos-animate {
+  transform: translate(0,0);
+}
+
+
 @media screen and (max-width: 768px) {
 
 .hero-section {
   height: auto;
+}
+
+[data-aos="custom-fade-upleft"] {
+  display: block;
+  transform: translate(4px, 4px);
+}
+
+[data-aos="custom-fade-upleft"].aos-animate {
+  transform: translate(0,0);
 }
 
 }

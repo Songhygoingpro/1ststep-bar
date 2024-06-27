@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>1st STEP</title>
   <link rel="icon" href="/img/1stSTEP-favicon.png" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
@@ -83,23 +84,25 @@
   </header>
   <main>
     <section class="top-page mb-10 flex flex-col md:flex-row" id="bar">
-     <div class="bar-image flex justify-center items-center" data-aos="fadeUp">
-      <div class="m-0 overflow-hidden">
-        <div class="bg-[#1A1819] pl-8 md:pl-10 pr-6 py-0 md:py-2" data-aos="custom-fade-right">
-          <h1 class="reveal-block text-center text-[1.5rem] tracking-[0.3em] leading-[2rem] md:text-[1.875rem] xl:text-[2.25rem] xl:tracking-[0.5em]">
-            <span data-aos="custom-fade-up" data-aos-delay="1000"><a href="/jp/bar.html">Bar</a></span>
-          </h1>
-        </div>
+      <div class="bar-image flex justify-center items-center" data-aos="fadeUp">
+        <h1 data-aos="fadeUp"
+          class="relative inline-block text-center text-[1.5rem] tracking-[0.3em] leading-[2rem] md:text-[1.875rem] xl:text-[2.25rem] xl:tracking-[0.5em]">
+          <div
+            class="absolute top-1 md:top-2 left-1 md:left-2 w-full h-full bg-[#FFFFFF4D] border-[1px] md:border-2 border-white z-10">
+          </div><a data-aos="custom-fade-upleft" data-aos-delay="800"
+            class="bg-[#1A1819] hover:translate-y-1 md:hover:translate-y-2 hover:translate-x-1 md:hover:translate-x-2 relative block w-full h-auto z-20 pl-8 md:pl-10 pr-6 py-2 md:py-4"
+            href="/jp/bar.html"><span>Bar</span></a>
+        </h1>
       </div>
-     </div>
-      <div class="sharedoffice-image flex justify-center items-center px-4" data-aos="fadeUp">
-        <div class="m-0 overflow-hidden">
-        <div class="bg-[#1A1819] pl-6 md:pl-10 pr-2 md:pr-6 py-0 md:py-2" data-aos="custom-fade-right">
-          <h1 class="reveal-block text-center text-[1.5rem] tracking-[0.3em] leading-[2rem] md:text-[1.875rem] xl:text-[2.25rem] xl:tracking-[0.5em]">
-            <span data-aos="custom-fade-up" data-aos-delay="1000"><a href="/jp/sharedoffice.html">Shared Office</a></span>
-          </h1>
-        </div>
-      </div>
+      <div class="sharedoffice-image flex justify-center items-center" data-aos="fadeUp">
+        <h1 data-aos="fadeUp"
+          class="relative inline-block text-center text-[1.5rem] tracking-[0.3em] leading-[2rem] md:text-[1.875rem] xl:text-[2.25rem] xl:tracking-[0.5em]">
+          <div
+            class="absolute top-1 md:top-2 left-1 md:left-2 w-full h-full bg-[#FFFFFF4D] border-[1px] md:border-2 border-white z-10">
+          </div><a data-aos="custom-fade-upleft" data-aos-delay="800"
+            class="bg-[#1A1819] hover:translate-y-1 md:hover:translate-y-2 hover:translate-x-1 md:hover:translate-x-2 relative block w-full h-auto z-20 pl-8 md:pl-10 pr-6 py-2 md:py-4"
+            href="/jp/sharedoffice.html"><span>Shared Office</span></a>
+        </h1>
       </div>
     </section>
   </main>
@@ -133,7 +136,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1200,
+      duration: 500,
       offset: 0,
       once: true,
     });
@@ -142,6 +145,14 @@
         AOS.refresh();
       });
     });
+
+    const delayedElements = document.querySelectorAll('[data-aos-delay]');
+
+    setTimeout(() => {
+      delayedElements.forEach(element => {
+        element.removeAttribute('data-aos-delay');
+      });
+    }, 1000);
   </script>
   <script src="/script.js"></script>
 </body>
